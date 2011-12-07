@@ -8,7 +8,10 @@ Instalation
 -----------
 
 In your gemfile add
-gem 'tire-mock_client'
+
+```ruby
+  gem 'tire-mock_client'
+```
 
 In the environments that you don't want to run ElasticSearch add:
 
