@@ -29,7 +29,10 @@ As of version 0.0.1 the search capabilities are quite limited.
 5. Create an [Issue][1] with a link to your branch
 6. Bathe in the glory
 
-Copyright (C) 2011 Amos King<amos.l.king@gmail.com>
+### Contributors
+Amos King
+
+Copyright (C) 2011 Amos King amos.l.king@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
