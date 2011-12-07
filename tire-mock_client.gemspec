@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {spec}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  s.extra_rdoc_files = ['README']
+  s.extra_rdoc_files = ['README.md', "LICENSE"]
   s.add_dependency('tire', '>= 0.3.11')
   s.add_dependency('activesupport')
   
