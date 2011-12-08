@@ -37,6 +37,8 @@ As of version 0.0.1 the search capabilities are quite limited.
 
 ### Contributors
 Amos King amos.l.king@gmail.com
+Helena Converse
+Craig Buchek
 
 Copyright (C) 2011 Amos King amos.l.king@gmail.com
 
