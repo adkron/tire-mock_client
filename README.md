@@ -24,6 +24,14 @@ end
 DONE!
 -----
 
+Road Map
+--------
+
+* Refactor from hack into a maintanable structure
+* Add in real scores
+* Add support for basic mappings(boost, non-indexed fields)
+
+
 As of version 0.0.1 the search capabilities are quite limited.
 
 ### Contributions
