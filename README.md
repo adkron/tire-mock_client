@@ -11,9 +11,12 @@ In your gemfile add
 gem 'tire-mock_client'
 
 In the environments that you don't want to run ElasticSearch add:
+
+```ruby
 Tire.configure do
   client Tire::Http::Client::MockClient
 end
+```
 
 DONE!
 -----
@@ -30,7 +33,7 @@ As of version 0.0.1 the search capabilities are quite limited.
 6. Bathe in the glory
 
 ### Contributors
-Amos King
+Amos King amos.l.king@gmail.com
 
 Copyright (C) 2011 Amos King amos.l.king@gmail.com
 
