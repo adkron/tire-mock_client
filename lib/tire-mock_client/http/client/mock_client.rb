@@ -56,13 +56,18 @@ module Tire
 
           the_filter = split_address[-2] if split_address[0] != split_address[-2]
           self.log "MockClient.get #{address}, #{json}"
-          query = ActiveSupport::JSON.decode(json)['query']['query_string']['query']
+          query = ActiveSupport::JSON.decode(json)['query']
+          if query['bool']
+            query = query['bool']['should'].first['query_string']['query']
+          else
+            query = query['query_string']['query']
+          end
           ids = words_to_ids[query]
 
           results = Array(ids).inject([]) do |collector, id|
             if the_filter.nil? || id[:index] == the_filter
               collector << {_index: id[:index], _type: id[:type], _id: id[:id], _score: 1.0, _source: ids_to_json[id[:id]]}
-            else 
+            else
               collector
             end
           end
@@ -97,7 +102,7 @@ module Tire
         end
 
         def self.logger
-          @logger ||= Tire.logger.public_method(:info)
+          @logger ||= Tire::Configuration.logger.public_method(:write)
         end
 
         def self.logger=(val)
